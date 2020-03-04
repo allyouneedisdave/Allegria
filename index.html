@@ -3,26 +3,81 @@
 <head>
 <meta charset="utf-8">
 	<meta name="viewport" content=" initial-scale=1.0"/>
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />	
+	<script src="js/modernizr-custom.min.js"></script>
+	<script src="js/respond.js"></script>
+	<!-- include external jQuery file but fall back to local file if external one fails to load !-->
+	<script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script> 
+	<script type="text/javascript">window.jQuery || document.write('<script type="text\/JavaScript" src="js\/jquery-3.4.1.mi.js"><\/script>')</script>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	
+	
 <title>Allegria - Italian Restaurant</title>
-</head>
+		
+<!--
 	<div class="sun-upper">
 		<img src="img/sunupper.png" >
 	</div>
 	
 	<nav class="navbar">
 		<ul>
-			<li><a href="#">MENU</a></li>
-			<li><a href="#">OFFERS</a></li>
-			<li><a href="#">CONTACT</a></li>
-			<li><a href="#">FIND US</a></li>
+			<li class="logo-text">
+				<div class="logo-text">
+					<img src="img/logotext.png" >
+				</div>	
+			</li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">Offers</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Find Us</a></li>
 		</ul>
 	</nav>
 	<div class="sun-lower">
 		<img src="img/sunlower.png" >
 	</div>
+-->
 
-	
+</head>
+		
 <body>
+	<header>
+		<h1 class="hidden">Allegria - Italian Restaurant</h1>
+		<div class="sun-upper">
+		<img src="img/sunupper.png" >
+	</div>
+	<div class="topnav" id="myTopnav">
+
+				<div class="logo-text">
+					<img src="img/logotext.png" >
+				</div>	
+		
+		
+		<a href="#home" class="active">Home</a>
+  		<a href="#news">Menu</a>
+  		<a href="#contact">Offers</a>
+  		<a href="#about">Find Us</a>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+	</div>	
+	<div class="sun-lower">
+		<img src="img/sunlower.png" >
+	</div>
+	</header>
 </body>
+	
+	<section id="offers">
+		<h2>Offers</h2>		
+	</section>
+	<section id="menu">
+		<h2>Menu</h2>		
+	</section>
+	<section id="contact">
+		<h2>Contact</h2>		
+	</section>
+	<section id="find-us">
+		<h2>Find Us</h2>		
+	</section>
 </html>
